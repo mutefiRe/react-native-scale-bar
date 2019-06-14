@@ -47,13 +47,17 @@ async handleMapChange() {
 
 ## Properties
 
-| Prop       | Required |   Type    | Default | Description                                                   |
-| :--------- | :------: | :-------: | :-----: | :------------------------------------------------------------ |
-| zoom       |   yes    | `number`  |    -    | Pass the zoom level to the component to adjust the scale bar. |
-| latitude   |    no    | `number`  | 48.8187 | Use the latitude to adjust the scale bar precision.           |
-| left       |    no    | `number`  |   10    | Padding with left border of the screen.                       |
-| bottom     |    no    | `number`  |   32    | Padding with bottom of the screen.                            |
-| metersOnly |    no    | `boolean` |  false  | Hides feet scale                                              |
+| Prop          | Required |   Type    | Default | Description                                                   |
+| :------------ | :------: | :-------: | :-----: | :------------------------------------------------------------ |
+| zoom          |   yes    | `number`  |    -    | Pass the zoom level to the component to adjust the scale bar. |
+| latitude      |    no    | `number`  | 48.8187 | Use the latitude to adjust the scale bar precision.           |
+| left          |    no    | `number`  |   10    | Padding with left border of the screen.                       |
+| bottom        |    no    | `number`  |   32    | Padding with bottom of the screen.                            |
+| metersOnly    |    no    | `boolean` |  false  | Hides feet scale                                              |
+| lineWidth     |    no    | `number`  |    1    | Width of vertical and horizontal lines                        |
+| color         |    no    | `string`  |  white  | Color of labels and lines                                     |
+| fontSize      |    no    | `number`  |   11    | Size of the labels                                            |
+| limiterHeight |    no    | `number`  |    8    | Height of the vertical lines                                  |
 
 ## Todo
 

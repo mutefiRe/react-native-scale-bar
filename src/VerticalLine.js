@@ -3,12 +3,12 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
-import { LINE_SIZE, LINE_COLOR } from "./constants";
-
 type Props = {
   padding_left: number,
   padding_bottom: number,
-  length: number
+  length: number,
+  color: string,
+  lineWidth: number
 };
 
 export default class VerticalLine extends Component<Props> {
@@ -20,8 +20,8 @@ export default class VerticalLine extends Component<Props> {
           left: this.props.padding_left,
           height: this.props.length,
           position: "absolute",
-          width: LINE_SIZE,
-          backgroundColor: LINE_COLOR
+          width: this.props.lineWidth,
+          backgroundColor: this.props.color
         }}
       />
     );
