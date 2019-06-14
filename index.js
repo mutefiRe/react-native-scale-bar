@@ -9,14 +9,16 @@ type Props = {
   zoom: number,
   latitude: number,
   bottom: number,
-  left: number
+  left: number,
+  metersOnly: boolean
 };
 
 class ScaleBar extends Component<Props> {
   static defaultProps = {
     latitude: 48.81879736812265,
     bottom: 42,
-    left: 10
+    left: 10,
+    metersOnly: false
   };
 
   render() {
@@ -35,6 +37,7 @@ class ScaleBar extends Component<Props> {
         lengthFeet={scaleBarSizeInFeet}
         scaleTextMeters={scaleBarTextInMeters}
         scaleTextFeet={scaleBarTextInFeet}
+        metersOnly={this.props.metersOnly}
       />
     );
   }

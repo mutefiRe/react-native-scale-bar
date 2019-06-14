@@ -1,10 +1,8 @@
-# react-native-scale-bar  [![NPM version](https://badge.fury.io/js/react-native-scale-bar.svg)](https://badge.fury.io/js/react-native-scale-bar.svg) [![Downloads](https://img.shields.io/npm/dt/react-native-scale-bar.svg)](https://www.npmjs.com/package/react-native-scale-bar) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](/)
-
+# react-native-scale-bar [![NPM version](https://badge.fury.io/js/react-native-scale-bar.svg)](https://badge.fury.io/js/react-native-scale-bar.svg) [![Downloads](https://img.shields.io/npm/dt/react-native-scale-bar.svg)](https://www.npmjs.com/package/react-native-scale-bar) [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](/)
 
 Scale bar for MapView in React Native. Works with Mapbox and Google Map.
 
 ![Image](images/screenshot.png)
-
 
 ## Installation
 
@@ -49,12 +47,13 @@ async handleMapChange() {
 
 ## Properties
 
-| Prop  | Required  | Type | Default |  Description |
-| :------------ |:---------------:| :---------------:| :---------------:| :-----|
-| zoom | yes | `number` | - | Pass the zoom level to the component to adjust the scale bar.  |
-| latitude | no | `number` | 48.8187 | Use the latitude to adjust the scale bar precision.  |
-| left | no | `number` | 10 | Padding with left border of the screen.  |
-| bottom | no | `number` | 32 | Padding with bottom of the screen.  |
+| Prop       | Required |   Type    | Default | Description                                                   |
+| :--------- | :------: | :-------: | :-----: | :------------------------------------------------------------ |
+| zoom       |   yes    | `number`  |    -    | Pass the zoom level to the component to adjust the scale bar. |
+| latitude   |    no    | `number`  | 48.8187 | Use the latitude to adjust the scale bar precision.           |
+| left       |    no    | `number`  |   10    | Padding with left border of the screen.                       |
+| bottom     |    no    | `number`  |   32    | Padding with bottom of the screen.                            |
+| metersOnly |    no    | `boolean` |  false  | Hides feet scale                                              |
 
 ## Todo
 
